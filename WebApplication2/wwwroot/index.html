@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="script.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Список книг</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body onload="InitialFunction();">
+    <h2>Список книг</h2>
+    <form name="bookForm">
+        <input type="hidden" name="id" value="0" />
+        <div class="form-group col-md-5">
+            <label for="name">Наименование:</label>
+            <input class="form-control" name="name" />
+        </div>
+        <div class="form-group col-md-5">
+            <label for="author">Автор:</label>
+            <input class="form-control" name="author" />
+        </div>
+        <div class="form-group col-md-5">
+            <label for="price">Стоимость:</label>
+            <input class="form-control" name="price" />
+        </div>
+        <div class="panel-body">
+            <button type="submit" id="submit" class="btn btnprimary">Сохранить</button>
+            <a id="reset" class="btn btn-primary">Сбросить</a>
+        </div>
+    </form>
+    <table class="table table-condensed table-striped col-md-6">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Наименование</th>
+                <th>Автор</th>
+                <th>Стоимость</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <div>2022 Альмира Гибадуллина</div>
+</body>
+</html>
